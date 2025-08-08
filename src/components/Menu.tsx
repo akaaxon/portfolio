@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Playwrite_AU_QLD } from "next/font/google";
-import { Instagram, LucideInstagram, X } from "lucide-react";
+import { Instagram, X } from "lucide-react";
 
 const playwrite = Playwrite_AU_QLD({
   weight: ["100", "200", "300", "400"],
@@ -13,8 +13,8 @@ const playwrite = Playwrite_AU_QLD({
 
 const menuLinks = [
   { path: "/", label: "Home" },
-  { path: "/contact-us", label: "Contact Us" },
-  { path: "/clients", label: "Our Clients" },
+  { path: "/contact-us", label: "Contact" },
+  
 ];
 
 // New MenuLink component with letter-by-letter hover animation
@@ -170,7 +170,7 @@ const Menu = () => {
         }`}
         style={{
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-          backgroundImage: "url('/menubg.jpg')",
+          backgroundImage: "url('/noisee.jpg')",
           backgroundSize: "cover",
          
         }}
@@ -183,7 +183,7 @@ const Menu = () => {
 
 
         <div
-          className={`flex flex-col md:flex-row text-5xl justify-center flex-grow mt-25 ${playwrite.className}  hover:font-sans text-white`}
+          className={`flex flex-col md:flex-row text-5xl justify-between flex-grow mt-25 ${playwrite.className}  hover:font-sans text-white`}
         >
           <div className="flex flex-col gap-10 font-semibold">
             {menuLinks.map((link, index) => (
@@ -201,7 +201,7 @@ const Menu = () => {
 
 ...
 
-<div className="mt-12 text-right text-lg text-white menu-footer flex flex-col items-end gap-4">
+<div className="md:mb-0 mb-8 text-right text-lg text-white menu-footer flex flex-col items-end gap-4">
   <a
     href="mailto:your.email@example.com"
     className="hover:underline hover:text-purple-700"

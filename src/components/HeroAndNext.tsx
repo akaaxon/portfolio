@@ -149,22 +149,12 @@ const Section1 = () => {
             Specializing in forensic web development and clean code solutions.
             Passionate about creating pixel-perfect UIs and analyzing data patterns.
           </p>
-          <button className="px-6 py-2 sm:px-8 sm:py-3 bg-purple-700 rounded-lg font-medium hover:bg-[#a51f1f] transition-colors">
+          <button className="px-6 py-2 sm:px-8 sm:py-3 bg-purple-700 rounded-lg font-medium hover:bg-black transition-colors">
             View My Work
           </button>
         </div>
 
-        <div className="relative w-[70vw] max-w-[250px] aspect-square sm:w-[45vh] md:w-[55vh] shadow-lg overflow-hidden rounded-full">
-          <Image
-            src={Pic1}
-            alt="Profile"
-            placeholder="blur"
-            fill
-            quality={60}
-            className="object-cover rounded-full will-change-transform"
-            priority
-          />
-        </div>
+      
       </div>
     </section>
   );
@@ -189,9 +179,9 @@ const Section2 = () => {
         <ul className="grid grid-cols-2 gap-x-4 gap-y-3 sm:gap-x-6 sm:gap-y-4 text-sm justify-center md:justify-start">
           {[
             { icon: <Brush className="text-purple-300" size={20} />, label: "Creative UI Design" },
-            { icon: <Laptop className="text-purple-300" size={20} />, label: "JavaScript & React Expert" },
+            { icon: <Laptop className="text-purple-300" size={20} />, label: "Secure User Experience" },
             { icon: <Zap className="text-purple-300" size={20} />, label: "Fast & Responsive Websites" },
-            { icon: <ToolCase className="text-purple-300" size={20} />, label: "GSAP Animation Specialist" },
+            { icon: <ToolCase className="text-purple-300" size={20} />, label: "NextJS Developer" },
           ].map(({ icon, label }, idx) => (
             <li
               key={idx}
