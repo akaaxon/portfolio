@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Khodor Wahab Devs",
+  title: "Khodor Devs",
   description: "Your trusted software development partner",
 };
 

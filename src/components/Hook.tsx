@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import hook1 from '../../public/blackbg.jpg';
+import hook1 from '../../public/blockk.jpeg';
 import hook2 from '../../public/hookback.jpg';
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
@@ -79,7 +79,7 @@ export default function Hook() {
   }, []);
 
   const text1 = "Instead of settling for what everyone else is doing...";
-  const text2 = "We create something that is uniquely yours.";
+  const text2 = "I create something that is uniquely yours.";
 
   return (
     <div
@@ -93,7 +93,10 @@ export default function Hook() {
           alt="Background"
           className="object-cover object-center w-full h-full"
         />
+        {/* Dim Overlay */}
+  <div className="absolute inset-0 bg-black/40 z-30" />
       </div>
+      
 {/* First Text */}
 <div className="absolute inset-0 z-10 flex justify-center items-center px-4">
   <h1 className="overflow-hidden text-center text-white font-bold flex flex-wrap justify-center gap-1">

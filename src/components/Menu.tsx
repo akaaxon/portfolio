@@ -13,7 +13,7 @@ const playwrite = Playwrite_AU_QLD({
 
 const menuLinks = [
   { path: "/", label: "Home" },
-  { path: "/contact-us", label: "Contact" },
+  { path: "/contact", label: "Contact" },
   
 ];
 
