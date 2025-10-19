@@ -57,7 +57,6 @@ export default function ContactPageSplitTheme() {
 
   const handleLoaded = () => setLoading(false);
 
-  // EmailJS send handler
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (sending) return;
