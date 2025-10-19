@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import Pic1 from '../../public/me-removebg-preview.png'; // (Unused? consider removing)
+import Pic1 from '../../public/me-removebg-preview.png'; 
 import AboutPic from '../../public/laptopp.jpg';
 import { useEffect, useRef } from "react";
 import Lenis from 'lenis';
@@ -27,7 +27,6 @@ export default function HeroAndNext() {
     }
     animationFrameId = requestAnimationFrame(raf);
 
-    // Animate heading chars with SplitType
     const heading = container.current?.querySelector("h1");
     const paragraph = container.current?.querySelector("p.animated-paragraph");
 
@@ -68,13 +67,12 @@ export default function HeroAndNext() {
       });
     }
 
-    // Section2 animations: scale/rotation + image & content entrance
+    // Section2 scale & rotate animation
     const section2 = container.current?.querySelector(".section2");
     const image = section2?.querySelector(".image");
     const content = section2?.querySelector(".content");
 
     if (section2 && image && content) {
-  // Timeline for section2 scale & rotation only
   gsap.timeline({
     scrollTrigger: {
       trigger: section2,
@@ -89,7 +87,6 @@ export default function HeroAndNext() {
     { scale: 1, rotation: 0, ease: "none" }
   );
 
-  // Separate timeline for image & content fade + slide in
   gsap.timeline({
     scrollTrigger: {
       trigger: section2,
