@@ -26,7 +26,6 @@ export default function Hook() {
         pin: true,
         pinSpacing: true,
         scrub: 1,
-        // markers: true,
       },
     });
 
@@ -65,7 +64,7 @@ export default function Hook() {
     }, ">+=1");
 
 
-    // Animate text2 as a block
+    // Animate text2 as a block after while revealing the 2nd image
     tl.fromTo(text2Ref.current, {
       opacity: 0,
       y: 50,
