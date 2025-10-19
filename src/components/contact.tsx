@@ -30,7 +30,6 @@ function LoadingScreen({ onLoaded }: { onLoaded: () => void }) {
 export default function ContactPageSplitTheme() {
   const [loading, setLoading] = useState(true);
   const [sending, setSending] = useState(false);
-
   const leftRef = useRef<HTMLDivElement | null>(null);
   const rightRef = useRef<HTMLFormElement | null>(null);
   const leftTitleRef = useRef<HTMLHeadingElement | null>(null);
